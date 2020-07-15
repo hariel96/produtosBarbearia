@@ -1,3 +1,10 @@
+body{
+	
+	margin: 0;
+	font-family: 'Montserrat Alternates', sans-serif;
+	
+}	
+
 .cabecalho {
 	background-color: black;
 	color: whitesmoke;
@@ -13,6 +20,7 @@
   padding-right: 2vh;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: initial;
 }
 
 
@@ -43,7 +51,10 @@
 	width: 940px;
 	margin: 0 auto;
 	padding: 8vh; 
+
+
 }
+
 
 .produtos li {
 	box-sizing: border-box;
@@ -87,15 +98,47 @@
 
 footer {
 	text-align: center;
-	background-color: #38388a;
+	background-color: lightgoldenrodyellow;
+	border-top: solid 0.4vh;
 }
 
 footer img {
-	height: 14vh;
+	height: 12vh;
 }
+
 
 footer p {
 	padding-bottom: 1.3vh;
-	font-size: 2.3vh;
+	font-size: 2vh;
 	font-weight: bolder;
+	margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+
+	 header, .cabecalho, .produtos, footer {
+		
+		width: auto;
+
+	}
+
+	.cabecalho {
+		display: list-item;
+	}
+
+	.logo {
+		height: 15vh;
+	}
+
+	.cabecalho ul {
+	 	justify-content: center;
+	 	width: auto;
+
+	}
+
+	.cabecalho a {
+	 	font-size: 1em;
+	}
+
+	
 }
